@@ -5,6 +5,7 @@ import 'package:perfect_eggs/widgets/type_button_widget.dart';
 import 'package:provider/provider.dart';
 
 import '../blocs/app_bloc.dart';
+import '../widgets/eggs_widget.dart';
 import '../widgets/progress_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: size.height * .30,
+              height: size.height * .10,
             ),
             Text(bloc.selected),
             Text(bloc.state),
@@ -29,10 +30,10 @@ class HomePage extends StatelessWidget {
             TypeButtonWidget(),
             SizedBox(height: 10),
             ActionButtonsWidget(),
-            SizedBox(
-              height: 10,
-            ),
+            SizedBox(height: 10),
             ProgressWidget(),
+            SizedBox(height: 10),
+            EggsWidget(),
           ],
         ),
       ),
