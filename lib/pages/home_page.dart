@@ -5,6 +5,7 @@ import 'package:perfect_eggs/widgets/type_button_widget.dart';
 import 'package:provider/provider.dart';
 
 import '../blocs/app_bloc.dart';
+import '../widgets/progress_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -28,6 +29,10 @@ class HomePage extends StatelessWidget {
             TypeButtonWidget(),
             SizedBox(height: 10),
             ActionButtonsWidget(),
+            SizedBox(
+              height: 10,
+            ),
+            ProgressWidget(),
           ],
         ),
       ),
