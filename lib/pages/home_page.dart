@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:perfect_eggs/widgets/button_widget.dart';
+import 'package:perfect_eggs/widgets/type_button_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,16 +15,7 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: size.height * .30,
             ),
-            ButtonWidget(
-              label: 'Test',
-              callback: () {},
-              selected: false,
-            ),
-            ButtonWidget(
-              label: 'Test',
-              callback: () {},
-              selected: true,
-            ),
+            TypeButtonWidget(),
           ],
         ),
       ),
