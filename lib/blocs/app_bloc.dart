@@ -6,7 +6,7 @@ class AppBloc extends ChangeNotifier {
   late Timer timer;
   String state = 'stopped';
   String selected = 'soft';
-  double time = 0.1 * 60.0;
+  double time = .1 * 60.0;
   double seconds = 0;
   double percent = 0;
 
@@ -67,13 +67,13 @@ class AppBloc extends ChangeNotifier {
 
   void done() {
     timer.cancel();
-    state = 'done';
+    state = "done";
     seconds = 0;
     percent = 0;
     notifyListeners();
   }
 
-  void reset() {
+  reset() {
     stop();
   }
 }
